@@ -8,7 +8,7 @@ const LoginScreen = () => {
   return (
     <View style={styles.container}>
        <Text>Click On Button to go on CredentialScreen</Text>
-       <Button title='Click me' onPress={()=>navigation.navigate("Credential")}/>
+       <Button title='Click me' onPress={()=>navigation.navigate("credentials")}/>
     </View>
   )
 }

@@ -7,7 +7,7 @@ const OnboardScreen = () => {
   return (
     <View style={styles.container}>
      <Text>Click On Button to go on LoginScreen</Text>
-      <Button title='Click me' onPress={()=>navigation.navigate("Login")}/>
+      <Button title='Click me' onPress={()=>navigation.navigate("login")}/>
     </View>
   )
 }

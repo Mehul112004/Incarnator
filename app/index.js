@@ -10,7 +10,7 @@ import MyTabs from "./BottomTabs/BottomTabs";
 const Stack = createNativeStackNavigator();
 export default function index() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator  screenOptions={{ headerShown: false }} >
       <Stack.Screen
         name="onboard"
         component={OnboardScreen}

@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import React from "react";
 import { useNavigation } from "expo-router";
+import { useProfileStore } from "../../store/profileStore";
 
 const CredentialScreen = () => {
   const navigation = useNavigation();
+    const profile = useProfileStore((state) => state.profile);
+    const setProfile = useProfileStore((state) => state.setProfile);
   return (
     <View style={styles.container}>
       <Text>WELCOME TO CREDENTIAL SCREEN</Text>
